@@ -1,0 +1,10 @@
+*.md
+!README.md
+*.bin
+*.gen
+*.smd
+*.rom
+*.zip
+*.xdelta
+trabajo/
+tools/
