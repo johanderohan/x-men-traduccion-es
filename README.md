@@ -2,6 +2,8 @@
 
 [![Invítame a un café](https://img.shields.io/badge/Ko--fi-Apoyar%20el%20proyecto-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/johanderohan)
 
+Ficha del proyecto, capturas y más traducciones al castellano en **[Parches en Castellano](https://parchesencastellano.com/traducciones/mega-drive/x-men)**.
+
 Traducción al castellano de España de **X-Men para Mega Drive / Genesis**, a partir de la edición USA en inglés. Se distribuye únicamente un parche: necesitas una copia propia del juego original.
 
 ## Estado
