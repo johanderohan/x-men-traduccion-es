@@ -8,7 +8,7 @@ Traducción al castellano de España de **X-Men para Mega Drive / Genesis**, a p
 
 ## Estado
 
-**v1.0 — En revisión.** Traducción y revisión asistidas por IA, sin revisión humana independiente ni partida completa.
+**v1.0.1 — En revisión.** Traducción y revisión asistidas por IA, sin revisión humana independiente ni partida completa.
 
 Incluye:
 
@@ -30,18 +30,18 @@ No se ha jugado de principio a fin ni probado en consola física. Las pruebas di
 
 ## Cómo aplicar el parche
 
-1. Descarga **[X-Men-es-ES-v1.0.xdelta](https://github.com/johanderohan/x-men-traduccion-es/releases/download/v1.0/X-Men-es-ES-v1.0.xdelta)** de la sección [Releases](https://github.com/johanderohan/x-men-traduccion-es/releases).
+1. Descarga **[X-Men-es-ES-v1.0.1.xdelta](https://github.com/johanderohan/x-men-traduccion-es/releases/download/v1.0.1/X-Men-es-ES-v1.0.1.xdelta)** de la sección [Releases](https://github.com/johanderohan/x-men-traduccion-es/releases).
 2. Comprueba que tu copia es la ROM USA original, sin cabecera de copiador ni otros parches:
 
 | Archivo | Tamaño | MD5 |
 |---|---:|---|
 | X-Men (USA).md | 1.048.576 bytes (1 MiB) | `63274bdd105d2abf265aa2d2934635c5` |
-| Resultado castellano v1.0 | 2.097.152 bytes (2 MiB) | `89df9a040b53a39affbbb61e39673df7` |
+| Resultado castellano v1.0.1 | 2.097.152 bytes (2 MiB) | `0f2ecc71773e69409eb6e96e5970b09f` |
 
 3. Usa Delta Patcher o ejecuta:
 
 ```sh
-xdelta3 -d -s "X-Men (USA).md" X-Men-es-ES-v1.0.xdelta "X-Men (es-ES).md"
+xdelta3 -d -s "X-Men (USA).md" X-Men-es-ES-v1.0.1.xdelta "X-Men (es-ES).md"
 ```
 
 4. Comprueba el MD5 del resultado y ábrelo en tu emulador. Cada versión se aplica sobre el original limpio, nunca sobre una ROM ya traducida.
@@ -51,10 +51,14 @@ La extensión `.md` del archivo del juego corresponde a una ROM de Mega Drive. L
 ### Huellas SHA-256
 
 - Original: `49f601abfa61f23f70420a2cc0c4cc90273540b4d199fb61d516f6344e9067ef`
-- Resultado v1.0: `a89dab259e87512ddbaa9bbc5750965f209081ef660e6ec1041de2d173889204`
-- Parche v1.0: `fc9bb78b04d33cae818ceac1228b47f1601bf2302fb44e58257e24ae924666db`
+- Resultado v1.0.1: `f37f4b16ed62ef58de17a08cde76fef1c93f679e667e255d7c53702c15aec7d7`
+- Parche v1.0.1: `bee1de94b6a4a03a83a7bdedd7dd41c1f0bd58659614980a1a1ed62698d48b26`
 
 ## Cambios
+
+### v1.0.1 · 27 de octubre de 2026
+
+Corrige los dos puntos, que aparecían como guiones en siete frases de diálogo, desenlace y cartelas. Se reutiliza un glifo sin ampliar la VRAM. Comprobado el signo en el juego y que el HUD se restaura sin cambios al cerrar el diálogo. El codificador y la auditoría rechazan ahora caracteres sin glifo propio.
 
 ### v1.0 · 27 de octubre de 2026
 
