@@ -8,7 +8,7 @@ Traducción al castellano de España de **X-Men para Mega Drive / Genesis**, a p
 
 ## Estado
 
-**v1.1 — En revisión.** Traducción y revisión asistidas por IA, sin revisión humana independiente ni partida completa.
+**v1.1.1 — En revisión.** Traducción y revisión asistidas por IA, sin revisión humana independiente ni partida completa.
 
 Incluye:
 
@@ -26,22 +26,22 @@ La construcción comprueba punteros, controles, dimensiones de mapas, límites d
 
 En Genesis Plus GX se han comprobado arranque frío, título, prólogo, dificultad y selección; las cuatro fichas completas; inicio jugable con mensajes de Gambito, Rondador y Cíclope; movimiento, salto y pausa/salida. El desenlace, los créditos y la pantalla de reinicio se han ensayado mediante acceso dirigido en el emulador. La v1.1 se ha comprobado además desde arranque frío en la frase de Magneto, la demostración con PULSA START, las cuatro fichas con su desplazamiento, los signos ¡¿ del primer diálogo y la pantalla de reinicio del sistema.
 
-No se ha jugado de principio a fin ni probado en consola física. Las pruebas dirigidas de escenas posteriores eluden sus condiciones de acceso y no demuestran que toda la aventura se haya completado. No se ha revisado el modo de dos jugadores en una partida completa. El juego no incorpora guardado de partida; los estados del emulador son una función aparte. Empieza una partida nueva y crea estados nuevos con esta versión.
+Un usuario ha completado el juego con la v1.1 y sus observaciones se corrigen en la v1.1.1; nosotros no lo hemos jugado de principio a fin ni probado en consola física. Las pruebas dirigidas de escenas posteriores eluden sus condiciones de acceso y no demuestran que toda la aventura se haya completado. No se ha revisado el modo de dos jugadores en una partida completa. El juego no incorpora guardado de partida; los estados del emulador son una función aparte. Empieza una partida nueva y crea estados nuevos con esta versión.
 
 ## Cómo aplicar el parche
 
-1. Descarga **[X-Men-es-ES-v1.1.xdelta](https://github.com/johanderohan/x-men-traduccion-es/releases/download/v1.1/X-Men-es-ES-v1.1.xdelta)** de la sección [Releases](https://github.com/johanderohan/x-men-traduccion-es/releases).
+1. Descarga **[X-Men-es-ES-v1.1.1.xdelta](https://github.com/johanderohan/x-men-traduccion-es/releases/download/v1.1.1/X-Men-es-ES-v1.1.1.xdelta)** de la sección [Releases](https://github.com/johanderohan/x-men-traduccion-es/releases).
 2. Comprueba que tu copia es la ROM USA original, sin cabecera de copiador ni otros parches:
 
 | Archivo | Tamaño | MD5 |
 |---|---:|---|
 | X-Men (USA).md | 1.048.576 bytes (1 MiB) | `63274bdd105d2abf265aa2d2934635c5` |
-| Resultado castellano v1.1 | 2.097.152 bytes (2 MiB) | `3a89b018bca3247b1ffdf6b60bf395bb` |
+| Resultado castellano v1.1.1 | 2.097.152 bytes (2 MiB) | `2c3b51f54cb30985a2dc1133e0a67e71` |
 
 3. Usa Delta Patcher o ejecuta:
 
 ```sh
-xdelta3 -d -s "X-Men (USA).md" X-Men-es-ES-v1.1.xdelta "X-Men (es-ES).md"
+xdelta3 -d -s "X-Men (USA).md" X-Men-es-ES-v1.1.1.xdelta "X-Men (es-ES).md"
 ```
 
 4. Comprueba el MD5 del resultado y ábrelo en tu emulador. Cada versión se aplica sobre el original limpio, nunca sobre una ROM ya traducida.
@@ -51,14 +51,18 @@ La extensión `.md` del archivo del juego corresponde a una ROM de Mega Drive. L
 ### Huellas SHA-256
 
 - Original: `49f601abfa61f23f70420a2cc0c4cc90273540b4d199fb61d516f6344e9067ef`
-- Resultado v1.1: `9c6148a670bfe9b7b7729d9efe190137dfb478ceafd944ee56472d48e186e937`
-- Parche v1.1: `36addb4f6d3ab97d28e3011b5729e1fa9bdfd586ba4ea66732220109fd6ff72a`
+- Resultado v1.1.1: `cf2cde81489ac2925a9fd9d9b87534aba04b4da706cc808a36bf4ffb15e2e73c`
+- Parche v1.1.1: `90d68c60ac3fb7449f5bdf6d4197fc82b418002754cd94a7f2ec353970a5bda5`
 
 ## Fase del ordenador: hay que reiniciar la consola
 
 En el escenario del ordenador (Sala de Peligro), tras desactivar el virus el juego pide reiniciar el ordenador. Hay que pulsar **Reset** de la consola (en el emulador, la opción de reinicio suave) sin volver a cargar la ROM; entonces aparece la pantalla verde de reinicio del sistema y continúa la historia. Es una mecánica del juego original, no un cuelgue de la traducción.
 
 ## Cambios
+
+### v1.1.1 · 31 de octubre de 2026
+
+Las cartelas que siguen al reinicio del sistema, camino del asteroide M, borran por completo la anterior: ya no quedan restos de texto mezclados. Los signos ¡ se giran también en horizontal y se colocan junto a la letra siguiente; la frase inicial de Magneto abre con ¡¡¡, a juego con su !!! final. Las tildes y la virgulilla de las fichas tienen el mismo ancho que en el resto del juego.
 
 ### v1.1 · 30 de octubre de 2026
 
